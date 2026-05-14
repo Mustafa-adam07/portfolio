@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mustafa Adam — Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-logo">MA<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="darkModeToggle" aria-label="Toggle dark mode">
+      <span class="toggle-icon">◐</span>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <p class="hero-tag">// Software Engineer</p>
+      <h1 class="hero-name">Mustafa<br><span class="outline-text">Adam</span></h1>
+      <p class="hero-sub">I build things for the web — clean code, thoughtful systems, and experiences that matter.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-block">
+        <div class="code-header"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span><span class="code-filename">mustafa.js</span></div>
+        <pre class="code-body"><span class="kw">const</span> <span class="fn">developer</span> = {
+  name<span class="op">:</span> <span class="str">"Mustafa Adam"</span>,
+  role<span class="op">:</span> <span class="str">"Software Engineer"</span>,
+  stack<span class="op">:</span> [<span class="str">"HTML"</span>, <span class="str">"CSS"</span>, <span class="str">"JS"</span>,
+         <span class="str">"PHP"</span>, <span class="str">"MySQL"</span>],
+  available<span class="op">:</span> <span class="kw">true</span>,
+  coffee<span class="op">:</span> <span class="str">"always"</span> ☕
+};</pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-label">01 — About</div>
+    <div class="about-grid">
+      <div class="about-img-wrap">
+        <div class="about-img-placeholder">
+          <span>MA</span>
+        </div>
+        <div class="about-badge">Open to Work</div>
+      </div>
+      <div class="about-text">
+        <h2>Hey, I'm Mustafa.</h2>
+        <p>I'm a motivated and hardworking Software Engineering student with a strong interest in technology, programming, and continuous learning.</p>
+        <p>I enjoy solving problems, working on creative projects, and improving my technical and communication skills — always pushing to grow one commit at a time.</p>
+        <div class="about-stats">
+          <div class="stat"><span class="stat-num" data-target="10">0</span><span class="stat-label">Projects</span></div>
+          <div class="stat"><span class="stat-num" data-target="3">0</span><span class="stat-label">Years Coding</span></div>
+          <div class="stat"><span class="stat-num" data-target="5">0</span><span class="stat-label">Technologies</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-label">02 — Skills</div>
+    <h2 class="section-title">What I Work With</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon">⟨/⟩</div>
+        <h3>HTML5</h3>
+        <p>Semantic markup, accessibility, and structured web documents.</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">◈</div>
+        <h3>CSS3</h3>
+        <p>Flexbox, Grid, animations, and responsive design systems.</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">⚡</div>
+        <h3>JavaScript</h3>
+        <p>DOM manipulation, AJAX, ES6+, and interactive UI logic.</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">⬡</div>
+        <h3>PHP</h3>
+        <p>Server-side logic, sessions, authentication, and APIs.</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">◉</div>
+        <h3>MySQL</h3>
+        <p>Relational databases, queries, and schema design.</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">⌥</div>
+        <h3>Git & GitHub</h3>
+        <p>Version control, branching strategies, and collaboration.</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🐍</div>
+        <h3>Python</h3>
+        <p>Scripting, problem solving, automation, and data processing.</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">☕</div>
+        <h3>Java</h3>
+        <p>Object-oriented programming, algorithms, and software design.</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">⚙</div>
+        <h3>C++</h3>
+        <p>Systems programming, memory management, and performance.</p>
+        <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-label">03 — Projects</div>
+    <h2 class="section-title">Featured Work</h2>
+    <div class="projects-filter">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+      <button class="filter-btn" data-filter="backend">Backend</button>
+      <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+    </div>
+    <div class="projects-grid" id="projectsGrid">
+      <!-- Loaded via AJAX from PHP -->
+      <div class="loading-spinner">
+        <div class="spinner"></div>
+        <p>Loading projects...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-label">04 — Contact</div>
+    <h2 class="section-title">Let's Work Together</h2>
+    <p class="contact-sub">Have a project in mind or want to chat? Send me a message and I'll get back to you.</p>
+    <div class="contact-wrap">
+      <div class="contact-info">
+        <div class="contact-item">
+          <span class="contact-icon">✉</span>
+          <span>uni.m.sity@gmail.com</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">⌖</span>
+          <span>Available for freelance & internships</span>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/Mustafa-adam07" target="_blank" rel="noopener" class="social-link">GitHub</a>
+        </div>
+      </div>
+      <form id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="fname">Full Name</label>
+          <input type="text" id="fname" name="name" placeholder="John Doe" autocomplete="off"/>
+          <span class="form-error" id="nameError"></span>
+        </div>
+        <div class="form-group">
+          <label for="femail">Email Address</label>
+          <input type="email" id="femail" name="email" placeholder="john@example.com"/>
+          <span class="form-error" id="emailError"></span>
+        </div>
+        <div class="form-group">
+          <label for="fsubject">Subject</label>
+          <input type="text" id="fsubject" name="subject" placeholder="Project Inquiry"/>
+          <span class="form-error" id="subjectError"></span>
+        </div>
+        <div class="form-group">
+          <label for="fmessage">Message</label>
+          <textarea id="fmessage" name="message" rows="5" placeholder="Tell me about your project..."></textarea>
+          <span class="form-error" id="messageError"></span>
+        </div>
+        <button type="submit" class="btn-primary btn-full" id="submitBtn">
+          <span class="btn-text">Send Message</span>
+          <span class="btn-loader" style="display:none">Sending...</span>
+        </button>
+        <div id="formStatus" class="form-status"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Designed & Built by <span>Mustafa Adam</span> — <span id="footerYear"></span></p>
+    <p class="footer-sub">Software Engineering Portfolio</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
