@@ -1,107 +1,72 @@
-# Mustafa Adam — Full-Stack Portfolio
+# My Portfolio Website
+### Mustafa Adam — Software Engineering
 
-A professional full-stack web portfolio built with HTML5, CSS3, JavaScript, PHP, and MySQL. Designed and developed as a comprehensive showcase of software engineering skills.
-
----
-
-## 🚀 Features
-
-| Feature | Implementation |
-|---|---|
-| Responsive Design | CSS Flexbox + Grid, mobile-first breakpoints |
-| Dark / Light Mode | JavaScript toggle + Cookie persistence |
-| Animated UI | CSS keyframes, scroll-reveal IntersectionObserver, counter animations |
-| Code Slider | JavaScript setInterval cycling hero code block |
-| Form Validation | Client-side JS + Server-side PHP double validation |
-| AJAX Projects | Fetch API → `php/get_projects.php` → JSON → DOM |
-| Contact Form | Fetch API POST → `php/contact.php` → MySQL |
-| Admin Login | PHP Sessions + `password_verify`, session timeout |
-| Admin Dashboard | Add/delete projects, view messages, stats overview |
-| Cookie Usage | Dark mode preference (365 days), admin remember |
-| Database | MySQL via PDO with prepared statements |
+This is my portfolio project for the Web Development course. I built it using HTML, CSS, JavaScript, PHP and MySQL. The goal was to create a full-stack website that shows my projects and lets people contact me.
 
 ---
 
-## 🗂 Project Structure
+## What I built
 
-```
+A personal portfolio website with:
+- A homepage with my info, skills and projects
+- A contact form that saves messages to a database
+- Projects that load from a database (not hardcoded)
+- A dark/light mode that remembers your preference
+- An admin page where I can log in and add/delete projects
+
+---
+
+## Technologies I used
+
+- **HTML5** for the structure and layout
+- **CSS3** for the design, animations and making it responsive on mobile
+- **JavaScript** for the interactive parts like form validation and loading projects without refreshing the page
+- **PHP** for the backend — handling form submissions and connecting to the database
+- **MySQL** for storing projects and contact messages
+- **MAMP** for running the server locally on my Mac
+
+---
+
+## How to run it
+
+1. Install MAMP and start the servers
+2. Copy the portfolio folder into /Applications/MAMP/htdocs/
+3. Open phpMyAdmin at http://localhost:8888/phpMyAdmin/
+4. Create a database called portfolio_db and import the sql/portfolio_db.sql file
+5. Open http://localhost:8888/portfolio/ in your browser
+
+For the admin panel go to http://localhost:8888/portfolio/admin/login.php
+- Username: mustafa
+- Password: Admin@1234
+
+---
+
+## File structure
+
 portfolio/
-├── index.html              # Main portfolio page
-├── css/
-│   └── style.css           # Full design system & responsive styles
-├── js/
-│   └── main.js             # All client-side logic (JS/DOM/AJAX)
+├── index.html        # main page
+├── css/style.css     # all the styling
+├── js/main.js        # javascript logic
 ├── php/
-│   ├── db.php              # PDO database connection
-│   ├── contact.php         # Contact form handler (POST → DB)
-│   └── get_projects.php    # Projects AJAX endpoint (GET → JSON)
+│   ├── db.php        # database connection
+│   ├── contact.php   # handles contact form
+│   └── get_projects.php  # returns projects as JSON
 ├── admin/
-│   ├── login.php           # Admin login with session handling
-│   ├── dashboard.php       # Admin dashboard (projects + messages)
-│   └── logout.php          # Session destroy + cookie clear
+│   ├── login.php     # admin login
+│   ├── dashboard.php # manage projects and view messages
+│   └── logout.php
 ├── sql/
-│   └── portfolio_db.sql    # Database schema + seed data
-└── README.md               # This file
-```
+│   └── portfolio_db.sql  # database tables and sample data
+└── README.md
 
 ---
 
-## ⚙️ Setup Instructions (MAMP)
+## Challenges I faced
 
-### 1. Place files
-Copy the `portfolio/` folder into your MAMP `htdocs` directory:
-```
-/Applications/MAMP/htdocs/portfolio/
-```
+Getting the AJAX to work properly with PHP took me a while because I kept getting CORS errors. Also setting up the sessions for the admin login was tricky at first but I figured it out.
 
-### 2. Import the database
-1. Open MAMP and start servers
-2. Go to **phpMyAdmin** → `http://localhost:8888/phpMyAdmin/`
-3. Click **Import** → select `sql/portfolio_db.sql` → Go
-
-### 3. Configure DB connection
-Open `php/db.php` and confirm:
-```php
-define('DB_HOST', 'localhost');
-define('DB_PORT', '8889');   // MAMP MySQL default
-define('DB_USER', 'root');
-define('DB_PASS', 'root');
-define('DB_NAME', 'portfolio_db');
-```
-
-### 4. Change admin credentials
-In `admin/login.php`, update:
-```php
-$ADMIN_USER = 'mustafa';
-$ADMIN_PASS = 'Admin@1234';  // ← Change this!
-```
-
-### 5. Visit the portfolio
-- **Portfolio:** `http://localhost:8888/portfolio/`
-- **Admin Login:** `http://localhost:8888/portfolio/admin/login.php`
+The responsive design on mobile also needed a lot of tweaking especially the hero section.
 
 ---
 
-## 🛠 Technologies Used
-
-- **HTML5** — Semantic structure, forms, tables
-- **CSS3** — Custom properties, Flexbox, Grid, animations, media queries
-- **JavaScript (ES6+)** — DOM manipulation, Fetch API, IntersectionObserver, Cookies
-- **PHP 8** — Server-side logic, PDO, Sessions, input sanitisation
-- **MySQL** — Relational database, prepared statements
-- **Google Fonts** — Syne (display) + Space Mono (monospace)
-
----
-
-## 🔐 Security Features
-
-- PDO prepared statements (SQL injection prevention)
-- `htmlspecialchars()` on all output (XSS prevention)
-- `session_regenerate_id()` on login
-- Session timeout after 2 hours
-- Server-side validation mirrors client-side validation
-- `HttpOnly` cookie flag on admin remember cookie
-
----
-
-Built by **Mustafa Adam** — Software Engineering Portfolio
+Built by Mustafa Adam
